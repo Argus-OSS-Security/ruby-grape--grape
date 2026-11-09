@@ -1,9 +1,10 @@
 name: Danger
 
-on:
-  pull_request:
-    types: [opened, reopened, edited, synchronize]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     types: [opened, reopened, edited, synchronize]
+# 
 jobs:
   danger:
     uses: numbata/danger-pr-comment/.github/workflows/danger-run.yml@v0.2.0
